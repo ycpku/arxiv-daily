@@ -1,0 +1,140 @@
+# Global settings
+max_results: 250
+lookback_hours: 30
+
+# Category-based rules. Each rule is matched and ranked independently.
+category_rules:
+  - name: Deformable-Contact Simulation
+    categories:
+      - cs.GR
+      - cs.CV
+      - cs.AI
+      - cs.LG
+      - cs.HC
+      - cs.PF
+      - math.NA
+    keywords_any:
+      - contact
+      - cloth
+      - hair
+      - soft body
+      - deformable
+      - fracture
+      - collision
+      - self-collision
+      - elastic
+      - plasticity
+      - constitutive model
+      - finite element
+      - fem
+      - mpm
+      - pbd
+      - physics-based
+      - elastodynamics
+      - fluid dynamics
+      - fluid-structure interaction
+      - differentiable simulation
+      - inverse simulation
+      - system identification
+      - collision detection
+      - collision response
+    keywords_all: []
+    # any: keyword OR author match, all: keyword AND author match
+    match_mode: any
+    # Optional author filter inside this category rule
+    authors_any: []
+    max_papers: 50
+    query_max_results: 250
+
+  - name: Neural Dynamics-PDE
+    categories:
+      - cs.GR
+      - cs.CV
+      - cs.AI
+      - cs.LG
+      - cs.HC
+      - cs.PF
+      - math.NA
+    keywords_any:
+      - neural simulator
+      - neural dynamics
+      - neural physics
+      - neural implicit
+      - neural pde
+      - physics informed
+      - operator learning
+      - neural operator
+      - fourier neural operator
+      - deep operator network
+      - pde solver
+      - differentiable physics
+      - graph network simulator
+      - latent dynamics
+      - neural ode
+      - neural sde
+      - diffusion dynamics
+      - surrogate model
+      - reduced order model
+      - data-driven simulation
+    keywords_all: []
+    match_mode: any
+    authors_any: []
+    max_papers: 20
+    query_max_results: 250
+
+  - name: Neural Rendering-Material
+    categories:
+      - cs.GR
+      - cs.CV
+      - cs.AI
+      - cs.LG
+      - cs.HC
+      - cs.PF
+      - math.NA
+    keywords_any:
+      - neural rendering
+      - inverse rendering
+      - relighting
+      - material reconstruction
+      - svbrdf
+      - brdf
+      - btf
+      - appearance model
+      - neural material
+      - reflectance
+      - radiance field
+      - nerf
+      - gaussian splatting
+      - differentiable rendering
+      - texture synthesis
+      - geometry and appearance
+      - illumination estimation
+      - physically based rendering
+      - pbr
+      - diffusion
+    keywords_all: []
+    match_mode: any
+    authors_any: []
+    max_papers: 10
+    query_max_results: 250
+
+# Extra section: latest papers from followed authors
+authors_watchlist:
+  authors:
+    - Minchen Li
+    - Taku Komura
+    - Yin Yang
+    - Peter Yichen Chen
+    - Chenfanfu Jiang
+    - Eitan Grinspun
+    - Tiantian Liu
+    - Yuanming Hu
+    - Daniele Panozzo
+    - Denis Zorin
+    - Bo Zhu
+    - Kemeng Huang
+    - Albert Chern
+    - Martin Fischer
+  max_papers_per_author: 5
+  query_max_results: 10
+  lookback_hours: 24

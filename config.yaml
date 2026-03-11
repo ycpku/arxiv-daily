@@ -4,7 +4,7 @@ lookback_hours: 30
 
 # Category-based rules. Each rule is matched and ranked independently.
 category_rules:
-  - name: Deformable-Contact Simulation
+  - name: Contact Simulation
     categories:
       - cs.GR
       - cs.CV
@@ -12,41 +12,25 @@ category_rules:
       - cs.LG
       - cs.HC
       - cs.PF
+      - cs.NA
+      - cs.RO
       - math.NA
     keywords_any:
       - contact
-      - cloth
-      - hair
-      - soft body
-      - deformable
-      - fracture
       - collision
       - self-collision
-      - elastic
-      - plasticity
-      - constitutive model
-      - finite element
-      - fem
-      - mpm
-      - pbd
-      - physics-based
-      - elastodynamics
-      - fluid dynamics
-      - fluid-structure interaction
-      - differentiable simulation
-      - inverse simulation
-      - system identification
       - collision detection
       - collision response
+      - physics-based
     keywords_all: []
     # any: keyword OR author match, all: keyword AND author match
     match_mode: any
     # Optional author filter inside this category rule
     authors_any: []
-    max_papers: 50
+    max_papers: 30
     query_max_results: 250
 
-  - name: Neural Dynamics-PDE
+  - name: Simulation General
     categories:
       - cs.GR
       - cs.CV
@@ -54,68 +38,55 @@ category_rules:
       - cs.LG
       - cs.HC
       - cs.PF
+      - cs.NA
       - math.NA
     keywords_any:
-      - neural simulator
-      - neural dynamics
-      - neural physics
-      - neural implicit
-      - neural pde
-      - physics informed
-      - operator learning
-      - neural operator
-      - fourier neural operator
-      - deep operator network
-      - pde solver
-      - differentiable physics
-      - graph network simulator
-      - latent dynamics
-      - neural ode
-      - neural sde
-      - diffusion dynamics
-      - surrogate model
-      - reduced order model
-      - data-driven simulation
+      - cloth
+      - hair
+      - soft body
+      - deformable
+      - fracture
+      - elastic
+      - plasticity
+      - constitutive model
+      - finite element
+      - rigid body
+      - fem
+      - mpm
+      - pbd
+      - abd
+      - physics-based
+      - elastodynamics
+      - fluid dynamics
+      - differentiable simulation
+      - inverse simulation
     keywords_all: []
+    # any: keyword OR author match, all: keyword AND author match
     match_mode: any
+    # Optional author filter inside this category rule
+    authors_any: []
+    max_papers: 30
+    query_max_results: 250
+
+  - name: Simulation Ready
+    categories:
+      - cs.CV
+      - cs.RO
+      - cs.GR
+      - cs.AI
+      - cs.LG
+      - cs.HC
+    keywords_any:
+      - simulation ready
+      - sim-ready
+      - articulated
+      - VLM
+    keywords_all: []
+    # any: keyword OR author match, all: keyword AND author match
+    match_mode: any
+    # Optional author filter inside this category rule
     authors_any: []
     max_papers: 20
-    query_max_results: 250
-
-  - name: Neural Rendering-Material
-    categories:
-      - cs.GR
-      - cs.CV
-      - cs.AI
-      - cs.LG
-      - cs.HC
-      - cs.PF
-      - math.NA
-    keywords_any:
-      - neural rendering
-      - inverse rendering
-      - relighting
-      - material reconstruction
-      - svbrdf
-      - brdf
-      - btf
-      - appearance model
-      - neural material
-      - reflectance
-      - radiance field
-      - nerf
-      - gaussian splatting
-      - differentiable rendering
-      - texture synthesis
-      - geometry and appearance
-      - illumination estimation
-      - physically based rendering
-      - pbr
-      - diffusion
-    keywords_all: []
-    match_mode: any
-    authors_any: []
-    max_papers: 10
     query_max_results: 250
 
 # Extra section: latest papers from followed authors
@@ -135,6 +106,8 @@ authors_watchlist:
     - Kemeng Huang
     - Albert Chern
     - Martin Fischer
+    - Hao Su
+    - Keenan Crane
   max_papers_per_author: 5
   query_max_results: 10
   lookback_hours: 24
